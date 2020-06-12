@@ -1,1 +1,11 @@
-asdfghjkl;
+on Git Bash or Git Cmd
+1- Enter in a drive -  cd /m
+2- Make directory - mkdir Project
+3- Enter in directory - cd Project
+4- Make Clone - git Clone link_of_repository
+5- enter in repository - cd name_of_repository
+6- create a file of your code eg-test 
+7- for push ->
+       a- git add .
+       b- git commit -m "test"
+       c- git push origin master
