@@ -1,21 +1,3 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
-#navigation-bar{
-    background-color: rgb(50, 50, 231);
-    width: 100%;
-    margin: 0 auto;
-    height: 50px;
-}
-#navigation-bar>ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#navigation-bar>ul>li{
-    list-style: none;
-    padding: 15px 5rem;
-    color: white;
+li{
     cursor: pointer;
 }

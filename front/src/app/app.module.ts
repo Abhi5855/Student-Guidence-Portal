@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { GuideComponent } from './guide/guide.component';
 import { ContactComponent } from './contact/contact.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,9 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    GuideComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,
