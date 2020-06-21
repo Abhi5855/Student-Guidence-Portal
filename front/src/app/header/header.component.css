@@ -7,11 +7,23 @@ body{
     width: 100%;
     margin: 0 auto;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.mainmenu{
+    width: 50%;
+    box-sizing: border-box;
+}
+.rightmenu{
+    width: 15%;
+    box-sizing: border-box;
 }
 .one{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     list-style: none;
     color: white;
     cursor: pointer;
@@ -25,6 +37,32 @@ body{
     color: white;
     cursor: pointer;
     padding: 15px 2rem;
+=======
+    list-style: none;
+}
+#navigation-bar>.mainmenu>li{
+   
+    /* padding: 15px 5rem; */
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    width:30% ;
+    text-align: center;
+}
+
+#navigation-bar>.rightmenu>li{
+   
+    /* padding: 15px 5rem; */
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    width:50% ;
+    text-align: center;
+>>>>>>> cbb17ba4a0c751ed3f6c5424150aa2f6df82a56e
 }
 
 #navigation-bar>ul>li:hover{
