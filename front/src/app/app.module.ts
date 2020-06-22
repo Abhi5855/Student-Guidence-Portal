@@ -10,7 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CardComponent } from './card/card.component';
-import {HttpClient} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http'
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { LogoutComponent } from './logout/logout.component';
@@ -36,7 +36,7 @@ import { HelpComponent } from './help/help.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
