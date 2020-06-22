@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body{
     margin: 0px;
     padding: 0px;
@@ -43,8 +43,8 @@ body{
 #navigation-bar>ul>li:hover{
     background-color:royalblue;
     box-shadow: 1px 1px 1px 1px black;
-=======
+}
 li{
     cursor: pointer;
->>>>>>> 065ded3bb91911d37263b3953cdc4a5d9eb84525
+
 }

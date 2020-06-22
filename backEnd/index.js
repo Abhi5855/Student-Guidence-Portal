@@ -64,11 +64,11 @@ app.post('/sign-up',bodyParser.json(),(req,res)=>{
             collection.insert(req.body,(err,result)=>{
                 if(!err)
                 {
-                    res.send({status:"ok",data:"sign up success"});
+                    result.send({status:"ok",data:"sign up success"});
                 }
                 else
                 {
-                    res.send({status:"failed",data:err});
+                    result.send({status:"failed",data:err});
                 }
             })
         }
