@@ -1,4 +1,4 @@
-import { NgModule, ContentChildren } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -14,8 +14,6 @@ import { LogoutComponent } from './logout/logout.component';
 
 
 const routes: Routes = [
-  {
-    path: "", canActivate: [AuthGuard], component: MainpageComponent, children: [
       { path: "", component: HomeComponent },
 
       { path: "about", component: AboutComponent },
@@ -26,24 +24,29 @@ const routes: Routes = [
 
       { path: "sign-in", component: SignInComponent },
 
-    ]
-  },
+      { path: "gallery", component: GalleryComponent },
+
+      { path: "help", component: HelpComponent },
   {
     path: "dashboard", canActivate: [AuthGuard], component: DashboardComponent, children: [
       {
         path: "logout", component: LogoutComponent
       }
     ]
-  },
-  { path: "", component: HomeComponent },
-  { path: "about", component: AboutComponent },
-  { path: "gallery", component: GalleryComponent },
-  { path: "contact", component: ContactComponent },
-  { path: "help", component: HelpComponent },
-  { path: "contact", component: ContactComponent },
-  { path: "sign-up", component: SignUpComponent },
-  { path: "sign-in", component: SignInComponent }
+  }
 ];
+
+
+//   {path:"",component:HomeComponent},
+//   {path:"about",component:AboutComponent},
+//   {path:"gallery",component:GalleryComponent},
+//   {path:"contact",component:ContactComponent},
+//   {path:"help",component:HelpComponent},
+//   {path:"contact" , component:ContactComponent},
+//   {path:"sign-up",component:SignUpComponent},
+//   {path:"sign-in",component:SignInComponent}
+// >>>>>>> 065ded3bb91911d37263b3953cdc4a5d9eb84525
+// ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
