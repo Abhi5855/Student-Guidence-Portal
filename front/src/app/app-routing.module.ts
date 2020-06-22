@@ -37,6 +37,18 @@ const routes: Routes = [
 
 ];
 
+
+//   {path:"",component:HomeComponent},
+//   {path:"about",component:AboutComponent},
+//   {path:"gallery",component:GalleryComponent},
+//   {path:"contact",component:ContactComponent},
+//   {path:"help",component:HelpComponent},
+//   {path:"contact" , component:ContactComponent},
+//   {path:"sign-up",component:SignUpComponent},
+//   {path:"sign-in",component:SignInComponent}
+// >>>>>>> 065ded3bb91911d37263b3953cdc4a5d9eb84525
+// ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

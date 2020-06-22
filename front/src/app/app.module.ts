@@ -29,7 +29,6 @@ import { HelpComponent } from './help/help.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-
     SignInComponent,
     SignUpComponent,
     CardComponent,
@@ -38,7 +37,6 @@ import { HelpComponent } from './help/help.component';
     LogoutComponent,
     GalleryComponent,
     HelpComponent
-
   ],
   imports: [
     BrowserModule,
