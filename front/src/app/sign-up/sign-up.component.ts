@@ -28,7 +28,7 @@ export class SignUpComponent implements OnInit {
         this.router.navigate(['/sign-in'])
       }
       else{
-        alert("Email you entered alredu exits");
+        alert("Email you entered alredy exits");
       }
     })
   }

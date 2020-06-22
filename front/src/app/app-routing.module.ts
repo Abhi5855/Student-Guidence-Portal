@@ -15,7 +15,7 @@ import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
 
-  {path:"", canActivate:[AuthGuard] ,component:MainpageComponent,children:[
+  {path:"",/* canActivate:[AuthGuard] ,*/component:MainpageComponent,children:[
                                               {path:"",component:HomeComponent},
 
                                               {path:"about",component:AboutComponent},
