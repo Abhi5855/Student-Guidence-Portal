@@ -14,7 +14,7 @@ import { LogoutComponent } from './logout/logout.component';
 
 
 const routes: Routes = [
-//<<<<<<< HEAD
+
   {path:"", canActivate:[AuthGuard] ,component:MainpageComponent,children:[
                                               {path:"",component:HomeComponent},
 
@@ -26,12 +26,17 @@ const routes: Routes = [
 
                                               {path:"sign-in",component:SignInComponent},
 
+                                              {path:"gallery",component:GalleryComponent}
+
   ]},
   {path:"dashboard" ,canActivate:[AuthGuard],component:DashboardComponent ,children:[
                                               {
                                                 path:"logout", component:LogoutComponent
                                               }
   ]}
+
+];
+
 
 //   {path:"",component:HomeComponent},
 //   {path:"about",component:AboutComponent},
@@ -43,7 +48,7 @@ const routes: Routes = [
 //   {path:"sign-in",component:SignInComponent}
 // >>>>>>> 065ded3bb91911d37263b3953cdc4a5d9eb84525
 // ];
-]
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

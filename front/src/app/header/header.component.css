@@ -43,8 +43,7 @@ body{
 #navigation-bar>ul>li:hover{
     background-color:royalblue;
     box-shadow: 1px 1px 1px 1px black;
-}
-li{
+
     cursor: pointer;
 
 }
