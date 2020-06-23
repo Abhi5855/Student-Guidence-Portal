@@ -1,22 +1,43 @@
-<app-card title="contact form" info="your data is secure here">
-    <form #f="ngForm">
-        <div class="form-group"  >
-            <label for="name">Name:</label>
-            <input #nameref="ngModel"  [(ngModel)]="nameProp" name="name" type="text" class="form-control" placeholder="Enter Name" id="name">
-        </div>
-        <div class="form-group"  >
-            <label for="mobile">Mobile NO.:</label>
-            <input #mobileref="ngModel"  [(ngModel)]="mobileProp" name="mobile" type="text" class="form-control" placeholder="Enter MobileNo." id="mobile">
-        </div>
-        <div class="form-group"  >
-          <label for="email">Email address:</label>
-          <input #emailref="ngModel"  [(ngModel)]="emailProp" name="email"   type="email" class="form-control" placeholder="Enter email" id="email">
-        </div>
-        <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input #passref="ngModel"  [(ngModel)]="passwordProp" name="password"  type="password" class="form-control" placeholder="Enter password" id="pwd">
-        </div>
-        
-        <button type="submit" class="btn btn-primary"  (click)="signup();">Submit</button>
-      </form>
-</app-card>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-primary" id="exampleModalLabel">Create an account</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-card title="contact form" info="your data is secure here">
+          <form #f="ngForm">
+              <div class="form-group"  >
+                  <label for="name">Name:</label>
+                  <input #nameref="ngModel"  [(ngModel)]="nameProp" name="name" type="text" class="form-control" placeholder="Enter Name" id="name">
+              </div>
+              <div class="form-group"  >
+                  <label for="mobile">Mobile NO.:</label>
+                  <input #mobileref="ngModel"  [(ngModel)]="mobileProp" name="mobile" type="text" class="form-control" placeholder="Enter MobileNo." id="mobile">
+              </div>
+              <div class="form-group"  >
+                <label for="email">Email address:</label>
+                <input #emailref="ngModel"  [(ngModel)]="emailProp" name="email"   type="email" class="form-control" placeholder="Enter email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input #passref="ngModel"  [(ngModel)]="passwordProp" name="password"  type="password" class="form-control" placeholder="Enter password" id="pwd">
+              </div>
+              <button type="submit" class="btn btn-primary"  (click)="signup();">Sign Up</button>
+            </form>
+      </app-card>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

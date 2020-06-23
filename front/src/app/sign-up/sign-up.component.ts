@@ -18,6 +18,11 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  reloadPage(){
+    window.location.href="localhost:4200/";
+    window.location.reload();
+    window.location.href="localhost:4200/sign-in";
+  }
   signup()
   {
     this.ds.signup({name:this.nameProp,email:this.emailProp,pasword:this.passwordProp,mobile:this.mobileProp})
