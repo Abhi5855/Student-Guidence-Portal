@@ -10,7 +10,7 @@ import { DataserviceService } from '../dataservice.service';
 export class SignInComponent implements OnInit {
   emailProp;
   passwordProp;
-  constructor(private router:Router,ds:DataserviceService) { }
+  constructor(private router:Router, private ds:DataserviceService) { }
 
   ngOnInit(): void {
     if(localStorage.getItem('email'))
@@ -20,7 +20,7 @@ export class SignInComponent implements OnInit {
   }
   signin()
   {
-    this.passwordProp.signin({email:this.emailProp,password:this.passwordProp})
+    this.ds.signin({email:this.emailProp,password:this.passwordProp})
     .subscribe((response)=>{
       if(response.status=="ok")
       {
@@ -29,7 +29,7 @@ export class SignInComponent implements OnInit {
         this.router.navigate(['/dashboard']);
       }
       else{
-        alert("credentials are incorrect");
+        alert("Email or Password is incorrect");
       }
     })
   }

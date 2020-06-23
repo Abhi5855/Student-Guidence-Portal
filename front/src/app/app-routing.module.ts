@@ -11,19 +11,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { LogoutComponent } from './logout/logout.component';
+import {HeaderComponent} from './header/header.component'
 
 
 const routes: Routes = [
       { path: "", component: HomeComponent },
-
       { path: "about", component: AboutComponent },
+      {path:"",component:MainpageComponent},
 
       { path: "contact", component: ContactComponent },
 
       { path: "sign-up", component: SignUpComponent },
 
       { path: "sign-in", component: SignInComponent },
-
       { path: "gallery", component: GalleryComponent },
 
       { path: "help", component: HelpComponent },
