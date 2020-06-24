@@ -1,5 +1,5 @@
 .classsec{
-    background-color:black;
+    background-color: palegoldenrod;
     height: 500px;
     width: 100%;
     display: flex;
@@ -14,7 +14,8 @@
     border: 1px solid yellow;
 } 
 .classsec>div:hover{
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 10px 5px 10px rgb(7, 7, 7);
+    border: 5px solid palegoldenrod;
 }
 .imageclass>img{
     height: 250px;

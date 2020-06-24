@@ -16,7 +16,7 @@ export class DataserviceService {
     return this.http.post(this.baseUrl+'/sign-up',d);
   }
 
-  signin(d):any
+  signIn(d):any
   {
     return this.http.post(this.baseUrl+'/sign-in',d);
   }
