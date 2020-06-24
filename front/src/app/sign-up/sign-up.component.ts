@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataserviceService } from '../dataservice.service';
 import { Router } from '@angular/router';
 
@@ -13,6 +13,7 @@ export class SignUpComponent implements OnInit {
   mobileProp;
   emailProp;
   passwordProp;
+  @ViewChild('mclose')closebtn;
   
   constructor(private router:Router ,private ds:DataserviceService) { }
 
@@ -32,6 +33,7 @@ export class SignUpComponent implements OnInit {
       {
         alert("Registration Successfull You Will Be Re-Directed To Sign-In");
         alert("hello");
+        this.closebtn.nativeElement.click();
         this.router.navigate(['/sign-in'])
         alert("hii");
       }

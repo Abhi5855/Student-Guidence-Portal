@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataserviceService } from '../dataservice.service';
 
@@ -10,6 +10,7 @@ import { DataserviceService } from '../dataservice.service';
 export class SignInComponent implements OnInit {
   emailProp;
   passwordProp;
+  @ViewChild('mclose')closebtn;
   constructor(private router:Router, private ds:DataserviceService) { }
 
   ngOnInit(): void {
@@ -26,6 +27,7 @@ export class SignInComponent implements OnInit {
       {
         localStorage.setItem('name',response.data[0].name);
         localStorage.setItem('email',response.data[0].email);
+        this.closebtn.nativeElement.click();
         this.router.navigate(['/dashboard']);
       }
       else{
