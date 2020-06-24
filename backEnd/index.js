@@ -27,8 +27,11 @@ app.get('/user', (req, res) => {
 })
 //sign in api
 app.post('/sign-in',bodyParser.json(),(req,res)=>{
+    console.log(req.body);
     var collection=connection.db('mydatabase').collection('student');
-    collection.find(req.body).toArray((err,doc)=>{
+    collection.find(req.body).toArray((err,docs)=>{
+        console.log("docs found");
+        console.log(docs);
         if(!err && docs.length>0)
         {
             res.send({status:"ok",data:docs});
