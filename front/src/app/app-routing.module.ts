@@ -16,19 +16,23 @@ import {FooterComponent} from './footer/footer.component'
 
 
 const routes: Routes = [
-      { path: "", component: HomeComponent },
-      { path: "about", component: AboutComponent },
-      {path:"",component:MainpageComponent},
 
-      { path: "contact", component: ContactComponent },
-
-      { path: "sign-up", component: SignUpComponent },
-
-      { path: "sign-in", component: SignInComponent },
-      { path: "gallery", component: GalleryComponent },
-
-      { path: "help", component: HelpComponent },
-      {path:"footer" , component:FooterComponent},
+      {path:"", component : MainpageComponent ,children: [
+        { path: "", component: HomeComponent },
+        { path: "about", component: AboutComponent },
+        
+  
+        { path: "contact", component: ContactComponent },
+  
+        { path: "sign-up", component: SignUpComponent },
+  
+        { path: "sign-in", component: SignInComponent },
+        { path: "gallery", component: GalleryComponent },
+  
+        { path: "help", component: HelpComponent },
+        {path:"footer" , component:FooterComponent}
+      ]} ,
+      
   {
     path: "dashboard", canActivate: [AuthGuard], component: DashboardComponent, children: [
       {

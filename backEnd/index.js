@@ -4,7 +4,7 @@ var MongoClient=require('mongodb').MongoClient;
 var objectId=require('mongodb').objectId;
 var cors=require('cors');
 var dbname="mydatabase"
-var client=new MongoClient('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/dbname?retryWrites=true&w=majority',{useNewUrlParser:true});
+var client=new MongoClient('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',{useNewUrlParser:true});
 const app= express();
 app.use(cors());
 var connection;
@@ -40,6 +40,10 @@ app.post('/sign-in',bodyParser.json(),(req,res)=>{
 })
 //signup api
 app.post('/sign-up',bodyParser.json(),(req,res)=>{
+
+    console.log(req.body);
+
+
     var collection=connection.db('mydatabase').collection('student');
   collection.find({ email: req.body.email }).toArray((err, docs) => {
         if (!err && docs.length > 0) {

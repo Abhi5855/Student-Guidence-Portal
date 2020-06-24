@@ -6,16 +6,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataserviceService {
 
+  baseUrl= "http://localhost:3000";
+
+
   constructor(private http:HttpClient) { }
   signup(d):any
   {
     
-    return this.http.post('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',d);
+    return this.http.post(this.baseUrl+'/sign-up',d);
   }
 
   signin(d):any
   {
-    return this.http.post('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',d)
+    return this.http.post(this.baseUrl+'/sign-in',d);
   }
   //here response will be returned from index .js sign in api.
 }
