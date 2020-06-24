@@ -6,15 +6,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataserviceService {
 
+  baseUrl= "http://localhost:3000";
+
+
   constructor(private http:HttpClient) { }
   signup(d):any
   {
-    return this.http.post('http://localhost:3000/sign-up',d);
+    
+    return this.http.post(this.baseUrl+'/sign-up',d);
   }
 
   signin(d):any
   {
-    return this.http.post('http://localhost:3000/sign-in',d)
+    return this.http.post(this.baseUrl+'/sign-in',d);
   }
   //here response will be returned from index .js sign in api.
 }

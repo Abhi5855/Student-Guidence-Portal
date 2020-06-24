@@ -16,6 +16,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { LogoutComponent } from './logout/logout.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HelpComponent } from './help/help.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HelpComponent } from './help/help.component';
     MainpageComponent,
     LogoutComponent,
     GalleryComponent,
-    HelpComponent
+    HelpComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
