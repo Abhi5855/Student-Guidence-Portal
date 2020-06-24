@@ -9,12 +9,13 @@ export class DataserviceService {
   constructor(private http:HttpClient) { }
   signup(d):any
   {
-    return this.http.post('http://localhost:3000/sign-up',d);
+    
+    return this.http.post('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',d);
   }
 
   signin(d):any
   {
-    return this.http.post('http://localhost:3000/sign-in',d)
+    return this.http.post('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',d)
   }
   //here response will be returned from index .js sign in api.
 }

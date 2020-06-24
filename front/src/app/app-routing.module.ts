@@ -11,7 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './auth.guard';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { LogoutComponent } from './logout/logout.component';
-import {HeaderComponent} from './header/header.component'
+import {HeaderComponent} from './header/header.component';
+import {FooterComponent} from './footer/footer.component'
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: "gallery", component: GalleryComponent },
 
       { path: "help", component: HelpComponent },
+      {path:"footer" , component:FooterComponent},
   {
     path: "dashboard", canActivate: [AuthGuard], component: DashboardComponent, children: [
       {

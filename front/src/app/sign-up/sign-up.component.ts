@@ -25,12 +25,15 @@ export class SignUpComponent implements OnInit {
   }
   signup()
   {
+    
     this.ds.signup({name:this.nameProp,email:this.emailProp,pasword:this.passwordProp,mobile:this.mobileProp})
     .subscribe((response)=>{
       if(response.status=="ok")
       {
         alert("Registration Successfull You Will Be Re-Directed To Sign-In");
+        alert("hello");
         this.router.navigate(['/sign-in'])
+        alert("hii");
       }
       else{
         alert("Email you entered alredy exits");
