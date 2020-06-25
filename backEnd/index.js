@@ -64,6 +64,21 @@ app.post('/sign-up',bodyParser.json(),(req,res)=>{
         }
     })
 })
+
+//contact api
+app.post('/contact',bodyParser.json(),(req,res)=>{
+    console.log("hii");
+    console.log(req.body);
+    var collection=connection.db('mydatabase').collection('contact');
+    collection.insert(req.body,(err,res) => {
+                if (!err) {
+                    res.send({ status: "ok", data: "Query received" });
+                }
+                else {
+                    res.send({ status: "failed", data: err });
+                }
+            })
+        })
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
 })
