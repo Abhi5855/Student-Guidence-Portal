@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <form action="">
+                <form #contactForm= "ngForm">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input #nameref="ngModel" [(ngModel)]="nameProp" type="text" name="name" class="form-control" placeholder="Name">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12 text-centre">
-                            <button type="submit" class="btn btn-primary" (click)="getQuery();">
+                            <button  disabled="{{contactForm.invalid}}"  type="submit" class="btn btn-primary" (click)="getQuery();">
                                 <i class="fas fa-paper-plane">Send</i>
                             </button>
                         </div>
