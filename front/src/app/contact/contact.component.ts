@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataserviceService } from '../dataservice.service';
 
 @Component({
@@ -12,23 +12,28 @@ export class ContactComponent implements OnInit {
   stateProp;
   subProp;
   msgProp;
+  @ViewChild('contactForm') cf;
   constructor(private ds:DataserviceService) { }
 
   ngOnInit(): void {
   }
   getQuery()
   {
-    
-    this.ds.getQuery({name:this.nameProp,email:this.emailProp,subject:this.subProp,state:this.stateProp,message:this.msgProp})
-    .subscribe((response)=>{
-      if(response.status=="ok")
-      {
-        alert("We have received your query.")
-      }
-      else
-      {
-        alert("something went wrong we didn't get anything.")
-      }
-    })
+    alert("hello");
+
+    if(this.cf.valid){
+        this.ds.getQuery({name:this.nameProp,email:this.emailProp,subject:this.subProp,state:this.stateProp,message:this.msgProp})
+        .subscribe((response)=>{
+          if(response.status=="ok")
+          {
+            alert("We have received your query.")
+          }
+          else
+          {
+            alert("something went wrong we didn't get anything.")
+          }
+        })
+        }
+
   }
 }
