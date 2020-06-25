@@ -22,18 +22,18 @@ export class ContactComponent implements OnInit {
     alert("hello");
 
     if(this.cf.valid){
-    this.ds.getQuery({name:this.nameProp,email:this.emailProp,subject:this.subProp,state:this.stateProp,message:this.msgProp})
-    .subscribe((response)=>{
-      if(response.status=="ok")
-      {
-        alert("We have received your query.")
-      }
-      else
-      {
-        alert("something went wrong we didn't get anything.")
-      }
-    })
-    }
+        this.ds.getQuery({name:this.nameProp,email:this.emailProp,subject:this.subProp,state:this.stateProp,message:this.msgProp})
+        .subscribe((response)=>{
+          if(response.status=="ok")
+          {
+            alert("We have received your query.")
+          }
+          else
+          {
+            alert("something went wrong we didn't get anything.")
+          }
+        })
+        }
 
   }
 }
