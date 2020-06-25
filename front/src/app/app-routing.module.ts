@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { HelpComponent } from './help/help.component';
 import { ContactComponent } from './contact/contact.component'
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -18,19 +17,19 @@ import {FooterComponent} from './footer/footer.component'
 const routes: Routes = [
 
       {path:"", component : MainpageComponent ,children: [
-        { path: "", component: HomeComponent },
-        { path: "about", component: AboutComponent },
+                                                          { path: "", component: HomeComponent },
+
+                                                          { path: "about", component: AboutComponent },
         
+                                                          { path: "contact", component: ContactComponent },
   
-        { path: "contact", component: ContactComponent },
+                                                          { path: "sign-up", component: SignUpComponent },
   
-        { path: "sign-up", component: SignUpComponent },
-  
-        { path: "sign-in", component: SignInComponent },
-        { path: "gallery", component: GalleryComponent },
-  
-        { path: "help", component: HelpComponent },
-        {path:"footer" , component:FooterComponent}
+                                                          { path: "sign-in", component: SignInComponent },
+
+                                                          { path: "gallery", component: GalleryComponent },
+
+                                                          {path:"footer" , component:FooterComponent}
       ]} ,
       
   {

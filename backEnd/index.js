@@ -70,7 +70,7 @@ app.post('/contact',bodyParser.json(),(req,res)=>{
     console.log("hii");
     console.log(req.body);
     var collection=connection.db('mydatabase').collection('contact');
-    collection.insert(req.body,(err,res) => {
+    collection.insert(req.body,(err) => {
                 if (!err) {
                     res.send({ status: "ok", data: "Query received" });
                 }

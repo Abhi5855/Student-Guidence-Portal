@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   }
   getQuery()
   {
-    alert("hello");
+    
     this.ds.getQuery({name:this.nameProp,email:this.emailProp,subject:this.subProp,state:this.stateProp,message:this.msgProp})
     .subscribe((response)=>{
       if(response.status=="ok")
