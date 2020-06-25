@@ -3,5 +3,6 @@
     text-shadow: 2px 0px 2px blanchedalmond;
 }
 .card:hover{
+    box-shadow: 10px 5px 10px black;
     border: 5px solid #B5B5B5;
 }
