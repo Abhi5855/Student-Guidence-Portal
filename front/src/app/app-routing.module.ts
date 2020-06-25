@@ -24,14 +24,14 @@ const routes: Routes = [
   
         { path: "contact", component: ContactComponent },
   
-        { path: "sign-up", component: SignUpComponent },
-  
-        { path: "sign-in", component: SignInComponent },
         { path: "gallery", component: GalleryComponent },
   
         { path: "help", component: HelpComponent },
         {path:"footer" , component:FooterComponent}
       ]} ,
+      { path: "sign-up", component: SignUpComponent },
+  
+        { path: "sign-in", component: SignInComponent },
       
   {
     path: "dashboard", canActivate: [AuthGuard], component: DashboardComponent, children: [

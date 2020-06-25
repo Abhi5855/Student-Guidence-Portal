@@ -1,95 +1,40 @@
-<div id="logo"> 
-  <h1><i> SIGN IN</i></h1>
-</div> 
-<section class="stark-login">
-  
-  <form action="" method="">    
-    <div id="fade-box">
-      <input type="text" name="username" id="username" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
-          
-          <button>Log In</button> 
+<div class="body1">
+  <div class="center">
+    <div class="btns">
+    <button id="a1" onclick="login_hide()">Sign Up</button>
+    <button id="a2" onclick="signup_hide()" style="background-color: #34495e;">Log In</button>
+    </div>
+    <div class="header signup-form">
+      <h3>Create an account</h3>
+      <form #f="ngForm">
+        <div class="form-group">
+          <input #nameref="ngModel" [(ngModel)]="nameProp" name="name" type="text" class="form-control mt-4"
+            placeholder="Enter your name" id="name">
+          <input #mobileref="ngModel" [(ngModel)]="mobileProp" name="mobile" type="tel" class="form-control"
+            placeholder="Enter mobile no." id="mobile">
+          <input #emailref="ngModel" [(ngModel)]="emailProp" name="email" type="email" class="form-control"
+            placeholder="Enter email" id="emails">
+          <input #passref="ngModel" [(ngModel)]="passwordProp" name="password" type="password" class="form-control"
+            placeholder="Enter password" id="pawd">
         </div>
+        <button type="submit" class="btn btn-primary" (click)="signup();">Signup</button><br>
       </form>
-      <div class="hexagons">
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <span>&#x2B22;</span>
-        <br>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <span>&#x2B22;</span>
-          <br>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span> 
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            <span>&#x2B22;</span>
-            
-            <br>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <span>&#x2B22;</span>
-              <br>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-                <span>&#x2B22;</span>
-              </div>      
-            </section> 
-            
-            <div id="circle1">
-              <div id="inner-cirlce1">
-                <h2> </h2>
-              </div>
+    </div>
+    <div class="login-form">
+      <div class="header header1">
+        <h3>Login for Free</h3>
+        <form #f="ngForm">
+          <div class="form-group"  >
+              <input #emailref="ngModel"  [(ngModel)]="emailProp" name="email"   type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+              <input #passref="ngModel"  [(ngModel)]="passwordProp" name="password"  type="password" class="form-control" placeholder="Enter password" id="pwd">
             </div>
             
-            
-            
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <button type="submit" class="btn btn-primary"  (click)="signin();">Login</button>
+      </form>
+      </div>
+    </div>
+  </div>
+
+</div>
