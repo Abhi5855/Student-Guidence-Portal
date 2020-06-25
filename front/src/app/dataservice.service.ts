@@ -21,4 +21,9 @@ export class DataserviceService {
     return this.http.post(this.baseUrl+'/sign-in',d);
   }
   //here response will be returned from index .js sign in api.
+
+  getQuery(d):any
+  {
+    return this.http.post(this.baseUrl+'/contact',d);
+  }
 }
