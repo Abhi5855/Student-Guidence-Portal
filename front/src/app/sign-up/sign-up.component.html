@@ -1,8 +1,8 @@
 <div class="body1">
   <div class="center">
     <div class="btns">
-    <button id="a1" onclick="login_hide()">Sign Up</button>
-    <button id="a2" onclick="signup_hide()" style="background-color: #34495e;">Log In</button>
+    <a id="a1" onclick="login_hide()" routerLink="/sign-up">Sign Up</a>
+    <a id="a2" onclick="signup_hide()" routerLink="/sign-in" style="background-color: #34495e;">Log In</a>
     </div>
     <div class="header signup-form">
       <h3>Create an account</h3>
@@ -13,28 +13,13 @@
           <input #mobileref="ngModel" [(ngModel)]="mobileProp" name="mobile" type="tel" class="form-control"
             placeholder="Enter mobile no." id="mobile">
           <input #emailref="ngModel" [(ngModel)]="emailProp" name="email" type="email" class="form-control"
-            placeholder="Enter email" id="emails">
+            placeholder="Enter email" id="email">
           <input #passref="ngModel" [(ngModel)]="passwordProp" name="password" type="password" class="form-control"
-            placeholder="Enter password" id="pawd">
+            placeholder="Enter password" id="pwd">
         </div>
         <button type="submit" class="btn btn-primary" (click)="signup();">Signup</button><br>
       </form>
     </div>
-    <div class="login-form">
-      <div class="header header1">
-        <h3>Login for Free</h3>
-        <form #f="ngForm">
-          <div class="form-group"  >
-              <input #emailref="ngModel"  [(ngModel)]="emailProp" name="email"   type="email" class="form-control" placeholder="Enter email" id="email">
-            </div>
-            <div class="form-group">
-              <input #passref="ngModel"  [(ngModel)]="passwordProp" name="password"  type="password" class="form-control" placeholder="Enter password" id="pwd">
-            </div>
-            
-            <button type="submit" class="btn btn-primary"  (click)="signin();">Login</button>
-      </form>
       </div>
-    </div>
-  </div>
 
 </div>

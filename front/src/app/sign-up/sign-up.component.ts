@@ -13,8 +13,6 @@ export class SignUpComponent implements OnInit {
   mobileProp;
   emailProp;
   passwordProp;
-  signup_form :any=document.getElementsByClassName('signup-form');
-  login_form :any=document.getElementsByClassName('login-form')
   
   constructor(private router:Router ,private ds:DataserviceService) { }
 
@@ -37,35 +35,4 @@ export class SignUpComponent implements OnInit {
       }
     })
   }
-  signin()
-  {
-      
-    this.ds.signIn({ email:this.emailProp, password:this.passwordProp})
-    .subscribe((response)=>{
-      alert("hello");
-      alert(JSON.stringify(response));
-      if(response.status=="ok")
-      {
-         
-        localStorage.setItem('name', response.data[0].name);          
-        localStorage.setItem('email', response.data[0].email);
-        localStorage.setItem('role', response.data[0].role);
-         this.router.navigate(['/dashboard']);
-
-      }
-      else{
-        alert("undefined arguments");
-      }
-    })
-  }
-   signup_hide(){
-     this.signup_form.style.display="none";
-     this.login_form.style.display="block";
-   }
-    login_hide(){
-     this.signup_form.style.display="block";
-     this.login_form.style.display="none";
-   }
- 
-
 }

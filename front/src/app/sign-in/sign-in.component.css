@@ -1,26 +1,71 @@
-.signupForm{
-    display: none;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+.body1{
+	background: linear-gradient(#bedef4,#93c8ec);
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'Noto Sans TC',sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.center{
+	vertical-align: middle;
+	width: 400px;
+	border: 1px solid#243342;
+	border-radius: 5px;
+	background: #2c3e50;
 }
 
-.loginForm{
-    display: block;
+.center .btns{
+	display: flex;
+	padding: 40px 0 20px 30px;
+
+}
+.btns a{
+	text-decoration: none;
+	padding:5px 50px;
+	font-size: 20px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #2981bc;
+	border-radius: 2px;
+}
+.center .header{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	padding: 5px 0 30px 0;
 }
 
-.box input {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    border: 2px solid rgb(34, 44, 51);
-    transition: 0.25s;
+form input{
+	align-self: center;
+	height: 45px;
+	width: 80%;
+	font-size: 20px;
+	background: none;
+	border-radius: 2px;
+	padding: 0 10px;
+	outline: none;
+	color: white;
+	margin-top: 5px;
+	margin-left: 40px;
 }
 
-button {
-    margin-left: 185px;
+::placeholder{
+	color: #7dbde8;
+
+}
+.btn{
+	width: 80%;
+	padding: 9px;
 }
 
-button:hover,
-button:active {
-    font-size: 18px;
-    transition: .4s;
+.btn:hover{
+	background: #2990d1;
+	transition: .5s;
+}
+.signup-form{
+	display: none;
 }
