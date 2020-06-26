@@ -8,35 +8,40 @@
 </div> -->
 
 
-<section class="classsec">
-    <div class="one">
-        <div class="imageclass">
-            <img src="assets/explore2.jpg" alt="">
+<section class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imageclass">
+                <img src="assets/explore2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="textclass">
+                <h4>EXPLORE YOURSELF</h4>
+                <p>Explore yoyrself by giving your academic survey to
+                    know where you stand and waht matches you.</p>
+                <button type="button" #knowmore class="btn btn-success mx-2" routerLink="/sign-in">Know More</button>
+            </div>
         </div>
-        <div class="textclass">
-            <h4 >EXPLORE YOURSELF</h4>
-            <p style="font-family: fantasy; font-size: larger;">Explore yoyrself by giving your academic survey to know where you stand and waht matches you.</p>
-            <button type="button" #knowmore class="btn btn-success mx-2" (click)="Sign">Know More</button>
+        <div class="col-md-4">
+            <div class="imageclass">
+                <img src="/assets/tip.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="textclass">
+                <h4>GET STUDY TIPS</h4>
+                <p>Follow the study tips while studying which makes you
+                    free from stress and more memorizable.</p>
+                <button class="btn btn-success my-1 mx-2" routerLink="/sign-in">Know More</button>
+            </div>
         </div>
-    </div>
-    <div class="one">
-        <div class="imageclass">
-            <img src="/assets/tip.jpg" alt="">
-        </div>
-        <div class="textclass">
-            <h4>GET STUDY TIPS</h4>
-            <p style="font-family: fantasy; font-size: larger;">Follow the study tips while studying which makes you free from stress and more memorizable.</p>
-            <button class="btn btn-success mx-2" >Know More</button>
-        </div>
-    </div>
-    <div class="one">
-        <div class="imageclass">
-            <img src="/assets/timetable.jpg" alt="">
-        </div>
-        <div class="textclass">
-            <h4>SCHEDULE TIME TABLE</h4>
-            <p style="font-family: fantasy; font-size: larger;">Prepare your own time table on the daily basis and follow it to manage your time.</p>
-            <button class="btn btn-success mx-2" >Know More</button>
+        <div class="col-md-4">
+            <div class="imageclass">
+                <img src="/assets/timetable.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="textclass">
+                <h4>SCHEDULE TIME TABLE</h4>
+                <p>Prepare your own time table on the daily basis and
+                    follow it to manage your time.</p>
+                <button class="btn btn-success mx-2" routerLink="/sign-in">Know More</button>
+            </div>
         </div>
     </div>
 </section>

@@ -22,15 +22,19 @@ const routes: Routes = [
                                                           { path: "about", component: AboutComponent },
         
                                                           { path: "contact", component: ContactComponent },
+
+        { path: "contact", component: ContactComponent },
   
-                                                          { path: "sign-up", component: SignUpComponent },
-  
-                                                          { path: "sign-in", component: SignInComponent },
+        { path: "gallery", component: GalleryComponent },
+      
 
                                                           { path: "gallery", component: GalleryComponent },
 
                                                           {path:"footer" , component:FooterComponent}
       ]} ,
+      { path: "sign-up", component: SignUpComponent },
+  
+        { path: "sign-in", component: SignInComponent },
       
   {
     path: "dashboard", canActivate: [AuthGuard], component: DashboardComponent, children: [
