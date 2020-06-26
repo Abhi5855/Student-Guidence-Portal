@@ -14,19 +14,19 @@
                         <div class="form-group col-md-6 shadow-sm">
                             <label for="name">Enter your name : </label>
                             <input #nameref="ngModel" [(ngModel)]="nameProp" id="name" type="text" name="name"
-                                class="form-control">
+                                class="form-control" required>
                         </div>
                         <div class="form-group col-md-6 shadow-sm">
                             <label for="email">Enter your email id : </label>
                             <input #emailref="ngModel" id="emial" [(ngModel)]="emailProp" type="email" name="email"
-                                class="form-control">
+                                class="form-control" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12 shadow-sm">
                             <label for="state">Enter Your State:</label>
                             <select #stateref="ngModel" [(ngModel)]="stateProp" name="state" id="state"
-                                class="form-control custom-select" data-placeholder="Enter Location" rel="select2">
+                                class="form-control custom-select" data-placeholder="Enter Location" rel="select2" required>
                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -67,18 +67,18 @@
                         </div>
                         <div class="form-group col-md-12 shadow-sm">
                             <input #subref="ngModel" [(ngModel)]="subProp" type="text" name="subject"
-                                class="form-control" placeholder="Enter Your concern">
+                                class="form-control" placeholder="Enter Your concern" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12 shadow-sm">
-                            <textarea class="form-control" #msgref="ngModel" [(ngModel)]="msgProp" name="msg" id="" rows="4" placeholder="Your message..."></textarea>
+                            <textarea class="form-control" #msgref="ngModel" [(ngModel)]="msgProp" name="msg" id="" rows="4" placeholder="Your message..." required></textarea>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-12 text-center">
-                            <button disabled="{{contactForm.invalid}}" type="submit" class="btn btn-primary"
+                            <button  type="submit" class="btn btn-primary"
                                 (click)="getQuery();">
                                 <i class="fas fa-paper-plane">Send</i>
                             </button>

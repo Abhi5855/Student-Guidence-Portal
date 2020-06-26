@@ -19,6 +19,7 @@ export class SignInComponent implements OnInit {
   @ViewChild('signUPForm') signupelement;
   @ViewChild('loginForm')  loginelement;
   @ViewChild('mclose') closebtn;
+  @ViewChild('f') lf;
   constructor( private router:Router, private ds:DataserviceService ) { }
 
   ngOnInit(): void {
@@ -29,28 +30,29 @@ export class SignInComponent implements OnInit {
 
   login()
   {
-      
-    this.ds.signIn({ email:this.emailProp, password:this.passwordProp})
-    .subscribe((response)=>{
-      alert("hello");
-      alert(JSON.stringify(response));
-      if(response.status=="ok")
-      {
-         
-        localStorage.setItem('name', response.data[0].name);          
-        localStorage.setItem('email', response.data[0].email);
-        localStorage.setItem('role', response.data[0].role);
-        
-        
-        this.closebtn.nativeElement.click();
-         this.router.navigate(['/dashboard']);
-
+     if(this.lf.valid) 
+    {
+        this.ds.signIn({ email:this.emailProp, password:this.passwordProp})
+        .subscribe((response)=>{
+          if(response.status=="ok")
+          {
+            
+            localStorage.setItem('name', response.data[0].name);          
+            localStorage.setItem('email', response.data[0].email);
+            localStorage.setItem('role', response.data[0].role);
+            
+            this.router.navigate(['/dashboard']);
+            this.closebtn.nativeElement.click();
+            
+          }
+          else{
+            alert("Incorrect email or password");
+          }
+        })
       }
       else{
-        alert("undefined arguments");
+        alert("please enter email or password");
       }
-    })
-
    
   }
  

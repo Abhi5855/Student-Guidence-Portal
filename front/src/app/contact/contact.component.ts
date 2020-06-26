@@ -19,8 +19,6 @@ export class ContactComponent implements OnInit {
   }
   getQuery()
   {
-    alert("hello");
-
     if(this.cf.valid){
         this.ds.getQuery({name:this.nameProp,email:this.emailProp,subject:this.subProp,state:this.stateProp,message:this.msgProp})
         .subscribe((response)=>{
@@ -34,6 +32,10 @@ export class ContactComponent implements OnInit {
           }
         })
         }
-
-  }
+        else
+        {
+          alert("Please fill the form completely...!");
+        }
+   }
+  
 }

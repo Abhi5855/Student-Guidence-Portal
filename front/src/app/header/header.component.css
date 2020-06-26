@@ -40,7 +40,7 @@ body{
     padding: 15px 2rem;
 } */
 
-#navigation-bar>ul>li:hover{
+.nav-item:hover{
     background-color:royalblue;
     box-shadow: 1px 1px 1px 1px black;
 }
