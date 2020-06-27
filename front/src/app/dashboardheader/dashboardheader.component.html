@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 1.2em;">
+    <img src="../sgp.png" alt="">
+    <a class="navbar-brand pl-4" href="#" style="font-size: 2em; font-weight: bold; text-shadow: 2px 2px 2px red; color: red;">SGP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto pl-4">
+        <li >
+          <a class="nav-item" routerLink="/" class="nav-link">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+          <a class="nav-item" routerLink="/about" class="nav-link">About</a>
+        </li>
+        <li>
+          <a class="nav-item" routerLink="/gallery" class="nav-link">Gallery</a>
+        </li>
+        <li>
+          <a class="nav-item" routerLink="/contact" class="nav-link">Contact Us</a>
+        </li>
+    </ul>      
+      <button type="button" class="btn btn-success mx-2" routerLink="/mainpage" data-toggle="modal" data-target="#exampleModal" (click)="logout();">
+        Logout
+      </button>
+    </div>
+  </nav>
+

@@ -17,6 +17,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HelpComponent } from './help/help.component';
 import { FooterComponent } from './footer/footer.component';
+import { DashboardheaderComponent } from './dashboardheader/dashboardheader.component';
+import { DashhomeComponent } from './dashhome/dashhome.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { FooterComponent } from './footer/footer.component';
     LogoutComponent,
     GalleryComponent,
     HelpComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardheaderComponent,
+    DashhomeComponent
   ],
   imports: [
     BrowserModule,

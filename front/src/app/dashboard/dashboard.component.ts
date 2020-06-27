@@ -12,11 +12,5 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  logout()
-  {
-    localStorage.removeItem("email");
-    localStorage.removeItem("name");
-
-    this.router.navigate(['/']);
-  }
+ 
 }

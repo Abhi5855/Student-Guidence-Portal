@@ -40,7 +40,7 @@ export class SignInComponent implements OnInit {
             localStorage.setItem('name', response.data[0].name);          
             localStorage.setItem('email', response.data[0].email);
             localStorage.setItem('role', response.data[0].role);
-            
+           
             this.router.navigate(['/dashboard']);
             this.closebtn.nativeElement.click();
             

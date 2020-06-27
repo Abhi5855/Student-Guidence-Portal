@@ -12,6 +12,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { LogoutComponent } from './logout/logout.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component'
+import { DashhomeComponent } from './dashhome/dashhome.component';
 
 
 const routes: Routes = [
@@ -22,12 +23,7 @@ const routes: Routes = [
                                                           { path: "about", component: AboutComponent },
         
                                                           { path: "contact", component: ContactComponent },
-
-        { path: "contact", component: ContactComponent },
   
-        { path: "gallery", component: GalleryComponent },
-      
-
                                                           { path: "gallery", component: GalleryComponent },
 
                                                           {path:"footer" , component:FooterComponent}
@@ -38,6 +34,14 @@ const routes: Routes = [
       
   {
     path: "dashboard", canActivate: [AuthGuard], component: DashboardComponent, children: [
+      {
+         path:"" ,component:DashhomeComponent
+      },
+      { path: "about", component: AboutComponent },
+        
+      { path: "contact", component: ContactComponent },
+
+      { path: "gallery", component: GalleryComponent },
       {
         path: "logout", component: LogoutComponent
       }
