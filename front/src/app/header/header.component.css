@@ -41,7 +41,7 @@ body{
 } */
 
 .nav-item:hover{
-    background-color:royalblue;
+    color:royalblue;
     box-shadow: 1px 1px 1px 1px black;
 }
 li{

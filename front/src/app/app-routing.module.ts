@@ -13,7 +13,8 @@ import { LogoutComponent } from './logout/logout.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component'
 import { DashhomeComponent } from './dashhome/dashhome.component';
-
+import {TipsComponent} from './tips/tips.component';
+import {TableComponent} from './table/table.component'
 
 const routes: Routes = [
 
@@ -44,6 +45,12 @@ const routes: Routes = [
       { path: "gallery", component: GalleryComponent },
       {
         path: "logout", component: LogoutComponent
+      },
+      {
+        path:"tips",component:TipsComponent
+      },
+      {
+        path:"table",component:TableComponent
       }
     ]
   }

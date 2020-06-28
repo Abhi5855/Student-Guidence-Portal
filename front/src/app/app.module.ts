@@ -19,6 +19,8 @@ import { HelpComponent } from './help/help.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardheaderComponent } from './dashboardheader/dashboardheader.component';
 import { DashhomeComponent } from './dashhome/dashhome.component';
+import { TipsComponent } from './tips/tips.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { DashhomeComponent } from './dashhome/dashhome.component';
     HelpComponent,
     FooterComponent,
     DashboardheaderComponent,
-    DashhomeComponent
+    DashhomeComponent,
+    TipsComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
