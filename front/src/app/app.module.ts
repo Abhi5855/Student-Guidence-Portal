@@ -21,6 +21,10 @@ import { DashboardheaderComponent } from './dashboardheader/dashboardheader.comp
 import { DashhomeComponent } from './dashhome/dashhome.component';
 import { TipsComponent } from './tips/tips.component';
 import { TableComponent } from './table/table.component';
+import { DashboardaboutComponent } from './dashboardabout/dashboardabout.component';
+import { DashboardgalleryComponent } from './dashboardgallery/dashboardgallery.component';
+import { DashboardcontactComponent } from './dashboardcontact/dashboardcontact.component';
+import { ExploreformComponent } from './exploreform/exploreform.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +44,15 @@ import { TableComponent } from './table/table.component';
     FooterComponent,
     DashboardheaderComponent,
     DashhomeComponent,
+<<<<<<< HEAD
     TipsComponent,
     TableComponent
+=======
+    DashboardaboutComponent,
+    DashboardgalleryComponent,
+    DashboardcontactComponent,
+    ExploreformComponent
+>>>>>>> 17db180b4d9a85153dd2c3b07dc81d28e4420d1e
   ],
   imports: [
     BrowserModule,
