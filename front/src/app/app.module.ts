@@ -19,6 +19,10 @@ import { HelpComponent } from './help/help.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardheaderComponent } from './dashboardheader/dashboardheader.component';
 import { DashhomeComponent } from './dashhome/dashhome.component';
+import { DashboardaboutComponent } from './dashboardabout/dashboardabout.component';
+import { DashboardgalleryComponent } from './dashboardgallery/dashboardgallery.component';
+import { DashboardcontactComponent } from './dashboardcontact/dashboardcontact.component';
+import { ExploreformComponent } from './exploreform/exploreform.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import { DashhomeComponent } from './dashhome/dashhome.component';
     HelpComponent,
     FooterComponent,
     DashboardheaderComponent,
-    DashhomeComponent
+    DashhomeComponent,
+    DashboardaboutComponent,
+    DashboardgalleryComponent,
+    DashboardcontactComponent,
+    ExploreformComponent
   ],
   imports: [
     BrowserModule,

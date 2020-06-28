@@ -16,6 +16,10 @@
       box-sizing: border-box;
       background-color: #74747486;
     }
+    ::selection{
+      color: white;
+    background-color: rgba(33, 153, 33, 0.678);
+}
   </style>
 </head>
 <body>
@@ -32,13 +36,6 @@
 </body>
 </html>
   <script>
-   var signup_form=document.getElementsByClassName('signup-form');
-   var login_form=document.getElementsByClassName('login-form')
-  //  console.log(login_link)
-   console.log(signup_form)
-   console.log(login_form)
-  //  signup_link.addEventListener('click',signup_hide);
-  //  login_link.addEventListener('click',login_hide);
    function signup_hide(){
      signup_form.style.display="none";
      login_form.style.display="block";
