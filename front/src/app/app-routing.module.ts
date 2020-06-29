@@ -45,7 +45,9 @@ const routes: Routes = [
       {
         path:"",component:DashhomeComponent 
       },
-      {path:"explore",component:ExploreformComponent},
+      {
+        path:"explore",component:ExploreformComponent
+      },
       { path: "dashboardabout", component: DashboardaboutComponent },
 
       { path: "dashboardcontact", component: DashboardcontactComponent },

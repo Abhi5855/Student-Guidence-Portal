@@ -44,15 +44,12 @@ import { ExploreformComponent } from './exploreform/exploreform.component';
     FooterComponent,
     DashboardheaderComponent,
     DashhomeComponent,
-<<<<<<< HEAD
     TipsComponent,
-    TableComponent
-=======
+    TableComponent,
     DashboardaboutComponent,
     DashboardgalleryComponent,
     DashboardcontactComponent,
     ExploreformComponent
->>>>>>> 17db180b4d9a85153dd2c3b07dc81d28e4420d1e
   ],
   imports: [
     BrowserModule,

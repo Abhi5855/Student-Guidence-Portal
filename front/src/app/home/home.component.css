@@ -17,17 +17,17 @@ p{
     font-family: fantasy;
     font-size:larger ;
 }
-.col-md-3{
+.col-md-4{
     background-color: gray;
     margin: 50px auto;
     border: 1px solid palegoldenrod;
 } 
-.col-md-3:hover{
+.col-md-4:hover{
     box-shadow: 10px 5px 10px rgb(7, 7, 7);
     border: 2px solid gray;
 }
 .imageclass>img{
-    width:300px;
+    width:100%;
 }
 
 .textclass{

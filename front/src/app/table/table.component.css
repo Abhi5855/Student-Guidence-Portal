@@ -1,0 +1,7 @@
+.container{
+    height: 300px;
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+}
