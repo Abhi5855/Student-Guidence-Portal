@@ -26,9 +26,9 @@ export class SignUpComponent implements OnInit {
       if(response.status=="ok")
       {
         alert("Registration Successfull You Will Be Re-Directed To Sign-In");
-        alert("hello");
+        
         this.router.navigate(['/sign-in'])
-        alert("hii");
+        
       }
       else{
         alert("Email you entered alredy exits");
