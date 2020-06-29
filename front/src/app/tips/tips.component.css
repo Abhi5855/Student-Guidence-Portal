@@ -1,0 +1,39 @@
+.main{
+    background-color: aquamarine;
+    height: 60px;
+    width: 100%;
+    text-align:center ;
+    color: cornflowerblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color:#F8F8FF;
+}
+
+.textclass>h2{
+    color: #8B0000;
+    text-decoration: underline;
+    text-decoration-color: #8B0000;
+}
+
+
+.textclass>p{
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}  
+.textclass>ul{
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+} 
+.imageclass>img{
+    height: 250px;
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

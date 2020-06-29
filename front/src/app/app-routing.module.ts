@@ -13,6 +13,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component'
 import { DashhomeComponent } from './dashhome/dashhome.component';
+import {TipsComponent} from './tips/tips.component';
+import {TableComponent} from './table/table.component'
 import { DashboardaboutComponent } from './dashboardabout/dashboardabout.component';
 import { DashboardcontactComponent } from './dashboardcontact/dashboardcontact.component';
 import { DashboardgalleryComponent } from './dashboardgallery/dashboardgallery.component';
@@ -51,6 +53,12 @@ const routes: Routes = [
       { path: "dashboardgallery", component: DashboardgalleryComponent },
       {
         path: "logout", component: LogoutComponent
+      },
+      {
+        path:"tips",component:TipsComponent
+      },
+      {
+        path:"table",component:TableComponent
       }
     ]
   }

@@ -1,25 +1,33 @@
-.container{
-    background-color: palegoldenrod;
-    height: 500px;
+#first
+{
+    background-image: url(../../assets/photo7.jpg);
+    height: 400px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size:;
+}
+.container{
+    background-color: white;
+    height: 500px;
+    width:100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 } 
 p{
     font-family: fantasy;
     font-size:larger ;
 }
-.col-md-4{
+.col-md-3{
     background-color: gray;
     margin: 50px auto;
-    border: 3px solid palegoldenrod;
+    border: 1px solid palegoldenrod;
 } 
-.col-md-4:hover{
+.col-md-3:hover{
     box-shadow: 10px 5px 10px rgb(7, 7, 7);
     border: 2px solid gray;
 }
 .imageclass>img{
-    width: 100%;
+    width:300px;
 }
 
 .textclass{
