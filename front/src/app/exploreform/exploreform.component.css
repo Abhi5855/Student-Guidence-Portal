@@ -1,41 +1,11 @@
 .container{
     background-color: rgb(80, 80, 224);
-    color: aliceblue;
     font-size: large;
 }
-input{
-    margin-left: 2em;
-}
-label{
-    margin-left: 3.2em;
-}
-input[type='radio']:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
-
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    top: -2px;
-    left: -1px;
-    position: relative;
-    background-color: #ffee00;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    border: 2px solid white;
-}
+/* .col-md-3{
+    margin: 0px 5px;
+    box-sizing: border-box;
+} */
 h1{
     text-align: center;
     text-decoration: underline;

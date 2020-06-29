@@ -19,6 +19,10 @@ import { DashboardaboutComponent } from './dashboardabout/dashboardabout.compone
 import { DashboardcontactComponent } from './dashboardcontact/dashboardcontact.component';
 import { DashboardgalleryComponent } from './dashboardgallery/dashboardgallery.component';
 import { ExploreformComponent } from './exploreform/exploreform.component';
+import { EngBlogComponent } from './eng-blog/eng-blog.component';
+import { DocBlogComponent } from './doc-blog/doc-blog.component';
+import { CaBlogComponent } from './ca-blog/ca-blog.component';
+import { GovtBlogComponent } from './govt-blog/govt-blog.component';
 
 
 const routes: Routes = [
@@ -46,6 +50,15 @@ const routes: Routes = [
         path:"",component:DashhomeComponent 
       },
       {path:"explore",component:ExploreformComponent},
+
+      { path:"eng_blog",component:EngBlogComponent},
+
+      { path:"doc_blog",component:DocBlogComponent },
+
+      { path:"ca_blog",component:CaBlogComponent},
+
+      { path:"govt_blog",component:GovtBlogComponent }, 
+
       { path: "dashboardabout", component: DashboardaboutComponent },
 
       { path: "dashboardcontact", component: DashboardcontactComponent },
@@ -73,7 +86,7 @@ const routes: Routes = [
 //   {path:"contact" , component:ContactComponent},
 //   {path:"sign-up",component:SignUpComponent},
 //   {path:"sign-in",component:SignInComponent}
-// >>>>>>> 065ded3bb91911d37263b3953cdc4a5d9eb84525
+//
 // ];
 
 @NgModule({

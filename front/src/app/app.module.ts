@@ -25,6 +25,10 @@ import { DashboardaboutComponent } from './dashboardabout/dashboardabout.compone
 import { DashboardgalleryComponent } from './dashboardgallery/dashboardgallery.component';
 import { DashboardcontactComponent } from './dashboardcontact/dashboardcontact.component';
 import { ExploreformComponent } from './exploreform/exploreform.component';
+import { EngBlogComponent } from './eng-blog/eng-blog.component';
+import { DocBlogComponent } from './doc-blog/doc-blog.component';
+import { CaBlogComponent } from './ca-blog/ca-blog.component';
+import { GovtBlogComponent } from './govt-blog/govt-blog.component';
 
 @NgModule({
   declarations: [
@@ -44,15 +48,16 @@ import { ExploreformComponent } from './exploreform/exploreform.component';
     FooterComponent,
     DashboardheaderComponent,
     DashhomeComponent,
-<<<<<<< HEAD
     TipsComponent,
-    TableComponent
-=======
+    TableComponent,
     DashboardaboutComponent,
     DashboardgalleryComponent,
     DashboardcontactComponent,
-    ExploreformComponent
->>>>>>> 17db180b4d9a85153dd2c3b07dc81d28e4420d1e
+    ExploreformComponent,
+    EngBlogComponent,
+    DocBlogComponent,
+    CaBlogComponent,
+    GovtBlogComponent
   ],
   imports: [
     BrowserModule,

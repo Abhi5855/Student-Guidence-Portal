@@ -1,15 +1,13 @@
-.but{
-    color: black;
-    border: 2px solid yellowgreen;
-    border-radius: 5px;
-    background-color: darkgoldenrod;
-    height: 40px;
-    width: 100px;
-}
 button:hover{
     box-sizing: 3px 3px blue;
 }
 .textclass{
+    /* display: flex; */
     align-items: center;
 }
+.textclass>button{
+    align-self: center;
+    justify-self: center;
+}
 
+/* Explore yourself by giving your academic survey to know where you stand and what matches you */

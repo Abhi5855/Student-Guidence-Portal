@@ -1,167 +1,46 @@
-<div class="container my-2 py-3">
-    <h1>Fill this survey for exploring yourself</h1>
-    <form>
-        <div class="form-group">
-            <label for="Q1">Q1) Choose your medium</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q1" id="hindi" value="option1" checked>
-                <label class="form-check-label" for="Q1">
-                    Hindi
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q1" id="english" value="option2">
-                <label class="form-check-label" for="Q1">
-                    English
-                </label>
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/engineering.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Engineering</h5>
+                    <p class="card-text">Scientists study the world as it is; engineers create the world that has never
+                        been.</p>
+                    <a routerLink="/dashboard/eng_blog" class="btn btn-primary">Know More</a>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="form-group">
-            <label for="Q2">Q2) What is your current study standerd ? </label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q2" id="Below_8" value="option1" checked>
-                <label class="form-check-label" for="Q2">
-                    Below 8<sup>th</sup>
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q2" id="Between_8" value="option2">
-                <label class="form-check-label" for="Q2">
-                    Between 8<sup>th</sup> and 10<sup>th</sup>
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q2" id="secondary" value="option3">
-                <label class="form-check-label" for="Q2">
-                    Secondary Education
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q2" id="S_Secondary" value="option4">
-                <label class="form-check-label" for="Q2">
-                    Senior Secondary Education
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q2" id="un_gra" value="option5">
-                <label class="form-check-label" for="Q2">
-                    Undergraduate(UG)
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q2" id="po_gra" value="option6">
-                <label class="form-check-label" for="Q2">
-                    Postgraduate(PG)
-                </label>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/doctor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Medical Student</h5>
+                    <p class="card-text">A good physician treats the disease, the great physician treats the patient.
+                    </p>
+                    <a routerLink="/dashboard/doc_blog" class="btn btn-primary">Know More</a>
+                </div>
             </div>
         </div>
-        <hr>
-        <div class="form-group">
-            <label for="Q3">Q3) Choose your field of interest</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q3" id="sport" value="option1" checked>
-                <label class="form-check-label" for="Q3">
-                    Sports
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q3" id="defence" value="option2">
-                <label class="form-check-label" for="Q3">
-                    Defence
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q3" id="singing" value="option3">
-                <label class="form-check-label" for="Q3">
-                    Singing
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q3" id="Dancing" value="option4">
-                <label class="form-check-label" for="Q2">
-                    Dancing
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q3" id="swimming" value="option5">
-                <label class="form-check-label" for="Q2">
-                    Swimming
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q3" id="comp_fight" value="option6">
-                <label class="form-check-label" for="Q2">
-                    Competition fight
-                </label>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="../../assets/ca.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Charter Accountat(CA)</h5>
+                    <p class="card-text">CA means Charismatic Amalgamation of great experiences of life</p>
+                    <a routerLink="/dashboard/ca_blog" class="btn btn-primary">Know More</a>
+                </div>
             </div>
         </div>
-        <br>
-        <div class="form-group">
-            <label for="Q4">Q4) What is your recent class score ?</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q4" id="Below_60" value="option1" checked>
-                <label class="form-check-label" for="Q4">
-                    Below 60%
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q4" id="Between_60_75" value="option2">
-                <label class="form-check-label" for="Q4">
-                    In Between 60% & 75%
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q4" id="Between_75_90" value="option3">
-                <label class="form-check-label" for="Q4">
-                    In Between 75% & 90%
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q4" id="Above_90" value="option4">
-                <label class="form-check-label" for="Q4">
-                    Above 90%
-                </label>
+        <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+            <img src="../../assets/govt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Govt. Jobs</h5>
+                <p class="card-text">Hillary Clinton has never created a single job other than government jobs or the staffers</p>
+                <a routerLink="/dashboard/govt_blog" class="btn btn-primary">Know More</a>
             </div>
         </div>
-        <br>
-        <div class="form-group">
-            <small>!! Last Question !!</small>
-            <br>
-            <label for="Q5">Q5) Choose your aim</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q5" id="sport" value="option1" checked>
-                <label class="form-check-label" for="Q5">
-                    Engineering
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q5" id="defence" value="option2">
-                <label class="form-check-label" for="Q5">
-                    Doctor
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q5" id="singing" value="option3">
-                <label class="form-check-label" for="Q5">
-                    Charter Accountant(CA)
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q5" id="Dancing" value="option4">
-                <label class="form-check-label" for="Q5">
-                    Government Job
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="Q5" id="swimming" value="option5">
-                <label class="form-check-label" for="Q5">
-                    Anything else
-                </label>
-            </div>
-        </div>
-        <button class="btn btn-success mx-4">Submit</button>
-    </form>
+    </div>
 </div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RwxC5J8LI4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
