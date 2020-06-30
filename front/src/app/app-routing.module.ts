@@ -49,7 +49,6 @@ const routes: Routes = [
       {
         path:"",component:DashhomeComponent 
       },
-<<<<<<< HEAD
       {path:"explore",component:ExploreformComponent},
 
       { path:"eng_blog",component:EngBlogComponent},
@@ -60,11 +59,6 @@ const routes: Routes = [
 
       { path:"govt_blog",component:GovtBlogComponent }, 
 
-=======
-      {
-        path:"explore",component:ExploreformComponent
-      },
->>>>>>> e2d22a4935b8e6dcf116b07e5fbfd77700b1786a
       { path: "dashboardabout", component: DashboardaboutComponent },
 
       { path: "dashboardcontact", component: DashboardcontactComponent },

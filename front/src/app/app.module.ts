@@ -53,15 +53,11 @@ import { GovtBlogComponent } from './govt-blog/govt-blog.component';
     DashboardaboutComponent,
     DashboardgalleryComponent,
     DashboardcontactComponent,
-<<<<<<< HEAD
     ExploreformComponent,
     EngBlogComponent,
     DocBlogComponent,
     CaBlogComponent,
     GovtBlogComponent
-=======
-    ExploreformComponent
->>>>>>> e2d22a4935b8e6dcf116b07e5fbfd77700b1786a
   ],
   imports: [
     BrowserModule,
