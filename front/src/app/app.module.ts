@@ -28,7 +28,6 @@ import { ExploreformComponent } from './exploreform/exploreform.component';
 import { EngBlogComponent } from './eng-blog/eng-blog.component';
 import { DocBlogComponent } from './doc-blog/doc-blog.component';
 import { CaBlogComponent } from './ca-blog/ca-blog.component';
-import { GovtBlogComponent } from './govt-blog/govt-blog.component';
 
 @NgModule({
   declarations: [
@@ -56,8 +55,7 @@ import { GovtBlogComponent } from './govt-blog/govt-blog.component';
     ExploreformComponent,
     EngBlogComponent,
     DocBlogComponent,
-    CaBlogComponent,
-    GovtBlogComponent
+    CaBlogComponent
   ],
   imports: [
     BrowserModule,

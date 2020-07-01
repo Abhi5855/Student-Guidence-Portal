@@ -22,7 +22,6 @@ import { ExploreformComponent } from './exploreform/exploreform.component';
 import { EngBlogComponent } from './eng-blog/eng-blog.component';
 import { DocBlogComponent } from './doc-blog/doc-blog.component';
 import { CaBlogComponent } from './ca-blog/ca-blog.component';
-import { GovtBlogComponent } from './govt-blog/govt-blog.component';
 
 
 const routes: Routes = [
@@ -56,8 +55,6 @@ const routes: Routes = [
       { path:"doc_blog",component:DocBlogComponent },
 
       { path:"ca_blog",component:CaBlogComponent},
-
-      { path:"govt_blog",component:GovtBlogComponent }, 
 
       { path: "dashboardabout", component: DashboardaboutComponent },
 
