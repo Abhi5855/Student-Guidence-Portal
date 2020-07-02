@@ -9,17 +9,24 @@ import { TimeTable } from '../models/timeTable';
   styleUrls: ['./list-time-table.component.css']
 })
 export class ListTimeTableComponent implements OnInit {
-  tt 
+  tt ;
 
   constructor(private router:Router ,private ds:DataserviceService) { }
 
   ngOnInit(): void {
           this.ds.getTimeTable().subscribe((response)=>{
+            alert(JSON.stringify(response));
             if(response.status=="ok")
             {
                 this.tt= response.data;
+                alert(JSON.stringify(this.tt));
             }
           })
+  }
+
+  update()
+  {
+    this.router.navigate(['/dashboard/table'], {queryParams:{isUpdate:true}});
   }
   
 

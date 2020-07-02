@@ -96,7 +96,29 @@ app.post('/table',bodyParser.json(),(req,res)=>{
         }
     })
 })
+
+
+app.post('/updatetimetable',bodyParser.json(),(req,res)=>{
+    console.log("inupdate table");
+    console.log(req.body);
+    var collection=connection.db('mydatabase').collection('timetable');
+    collection.update({email: req.body.email} , {$set:{tabledata:req.body.tabledata}},(err,result)=>{
+        if(!err)
+        {
+            res.send({status:"ok",data:"TimeTable stored"});
+        }
+        else
+        {
+            res.send({status:"failed",data:err});
+        }
+    })
+})
+
+
+
 app.post('/gettable',bodyParser.json(), (req,res)=>{
+    console.log("in get table");
+    console.log(req.body);
     var collection=connection.db('mydatabase').collection('timetable');
     collection.find({email:req.body.email}).toArray((err,docs)=>{
         if(!err && docs.length>0)

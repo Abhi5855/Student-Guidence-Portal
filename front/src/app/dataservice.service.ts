@@ -32,6 +32,13 @@ export class DataserviceService {
     return this.http.post(this.baseUrl+'/table',d);
   }
 
+
+  updateTimeTable(d):any
+  {
+    return this.http.post(this.baseUrl+'/updatetimetable',d);
+  }
+  
+
   getTimeTable():any
   {
     console.log(localStorage.getItem('email'));
