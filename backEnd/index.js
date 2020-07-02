@@ -96,6 +96,21 @@ app.post('/table',bodyParser.json(),(req,res)=>{
         }
     })
 })
+app.post('/gettable',bodyParser.json(), (req,res)=>{
+    var collection=connection.db('mydatabase').collection('timetable');
+    collection.find({email:req.body.email}).toArray((err,docs)=>{
+        if(!err && docs.length>0)
+        {
+            res.send({status:"ok", data:docs[0]});
+        }
+        else{
+            res.send({status:"failed", data:err});
+        }
+
+    })
+})
+
+
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
 })

@@ -28,6 +28,7 @@ import { ExploreformComponent } from './exploreform/exploreform.component';
 import { EngBlogComponent } from './eng-blog/eng-blog.component';
 import { DocBlogComponent } from './doc-blog/doc-blog.component';
 import { CaBlogComponent } from './ca-blog/ca-blog.component';
+import { ListTimeTableComponent } from './list-time-table/list-time-table.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { CaBlogComponent } from './ca-blog/ca-blog.component';
     ExploreformComponent,
     EngBlogComponent,
     DocBlogComponent,
-    CaBlogComponent
+    CaBlogComponent,
+    ListTimeTableComponent
   ],
   imports: [
     BrowserModule,

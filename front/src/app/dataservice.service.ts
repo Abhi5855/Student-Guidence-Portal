@@ -31,4 +31,11 @@ export class DataserviceService {
   {
     return this.http.post(this.baseUrl+'/table',d);
   }
+
+  getTimeTable():any
+  {
+    console.log(localStorage.getItem('email'));
+    return this.http.post(this.baseUrl+'/gettable',{email:localStorage.getItem('email')});
+  }
+
 }

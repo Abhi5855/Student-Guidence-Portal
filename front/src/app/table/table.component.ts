@@ -11,13 +11,26 @@ import { Router } from '@angular/router';
 export class TableComponent implements OnInit {
   tt = new TimeTable();
 
+
   constructor(private router:Router ,private ds:DataserviceService) { }
 
   ngOnInit(): void {
-
+          this.ds.getTimeTable().subscribe((response)=>{
+            if(response.status=="ok")
+            {
+                this.router.navigate(['/listtimetable']);
+            }
+            else
+            {
+               alert("time table not found");
+            }
+          })
   }
   save()
   {
+
+    alert(JSON.stringify(this.tt));
+
     this.ds.save({tabledata:this.tt})
     .subscribe((response)=>{
       if(response.status=="ok")
