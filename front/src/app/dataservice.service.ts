@@ -26,4 +26,9 @@ export class DataserviceService {
   {
     return this.http.post(this.baseUrl+'/contact',d);
   }
+
+  save(d):any
+  {
+    return this.http.post(this.baseUrl+'/table',d);
+  }
 }

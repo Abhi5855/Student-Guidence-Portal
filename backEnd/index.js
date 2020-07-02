@@ -79,6 +79,23 @@ app.post('/contact',bodyParser.json(),(req,res)=>{
                 }
             })
         })
+
+//table api
+
+app.post('/table',bodyParser.json(),(req,res)=>{
+    console.log(req.body);
+    var collection=connection.db('mydatabase').collection('timetable');
+    collection.insert(req.body,(err,result)=>{
+        if(!err)
+        {
+            res.send({status:"ok",data:"TimeTable stored"});
+        }
+        else
+        {
+            res.send({status:"failed",data:err});
+        }
+    })
+})
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
 })
