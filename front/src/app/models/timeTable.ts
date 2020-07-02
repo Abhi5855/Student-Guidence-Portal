@@ -1,10 +1,10 @@
 export class TimeTable{
-     monday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string };
-     tuesday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string };
-     wednesday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string } ;
-     thursday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string };
-     friday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string };
-     saturday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string };
-     sunday: { sub1:string, sub2:string ,sub3:string,sub4:string, sub5:string ,sub6:string };
+     monday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" };
+     tuesday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" };
+     wednesday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" } ;
+     thursday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" };
+     friday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" };
+     saturday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" };
+     sunday= { sub1:"", sub2:"" ,sub3:"",sub4:"", sub5:"" ,sub6:"" };
    
 }
