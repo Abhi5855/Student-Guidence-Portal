@@ -1,4 +1,4 @@
-#first
+/* #first
 {
     background-image: url(../../assets/photo7.jpg);
     height: 400px;
@@ -7,19 +7,19 @@
     background-size:;
 }
 .container{
-    background-color: white;
-    height: 500px;
     width:100%;
     display: flex;
     justify-content: space-around;
+    box-sizing: border-box;
 } 
 p{
     font-family: fantasy;
     font-size:larger ;
 }
 .col-md-4{
+    width: 27%;
     background-color: gray;
-    margin: 50px auto;
+    margin: 50px 10px;
     border: 1px solid palegoldenrod;
 } 
 .col-md-4:hover{
@@ -34,4 +34,4 @@ p{
     text-align: justify;
     width: 100%;
     color: darkred;
-}  
+}   */
