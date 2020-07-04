@@ -1,4 +1,6 @@
-<section class="container my-auto">
+<section class="container mt-5">
+    <h2 style="color: azure;">SCHEDULE YOUR TIME TABLE HERE</h2>
+    <p style="color: beige;">Fill the blocks as per day of the week with respect to your subject.Then click on save button to make it safe.And if you have any update then click on update button.</p>
     <table class="table table-bordered table-dark my-auto" >
         <thead>
             <tr>
@@ -134,10 +136,12 @@
                 </td>
             </tr>
         </tbody>
+
     </table>
-    
+    <br>
+    <div class="but-div ">
+        <button style="float: right;" *ngIf="!isUpdate" class="btn btn-success" (click)="save();">Save</button>
+        <button style="float: right;" *ngIf="isUpdate" class="btn btn-success " (click)="update();">Update</button>
+    </div>
+     
 </section>
-<div class="but-div">
-    <button *ngIf="!isUpdate" class="btn btn-warning " (click)="save();">Save</button>
-    <button *ngIf="isUpdate" class="btn btn-warning " (click)="update();">Update</button>
-</div>

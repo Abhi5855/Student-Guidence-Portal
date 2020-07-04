@@ -1,7 +1,11 @@
 .container{
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-color: chocolate;
-    display: flex;
-    justify-content: center;
+    
+    
+}
+.but-div
+{
+    margin: auto 0px 40px;
 }

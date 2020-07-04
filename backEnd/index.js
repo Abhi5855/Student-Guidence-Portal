@@ -99,7 +99,7 @@ app.post('/table',bodyParser.json(),(req,res)=>{
 
 
 app.post('/updatetimetable',bodyParser.json(),(req,res)=>{
-    console.log("inupdate table");
+    console.log("in update table");
     console.log(req.body);
     var collection=connection.db('mydatabase').collection('timetable');
     collection.update({email: req.body.email} , {$set:{tabledata:req.body.tabledata}},(err,result)=>{
