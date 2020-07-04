@@ -18,7 +18,7 @@ export class TableComponent implements OnInit {
 
           this.route.queryParamMap.subscribe((d)=>{
                     this.isUpdate = d.get('isUpdate');
-                    alert(this.isUpdate);
+                    // alert(this.isUpdate);
           })
 
           if(!this.isUpdate)
@@ -51,7 +51,7 @@ export class TableComponent implements OnInit {
   save()
   {
 
-    alert(JSON.stringify(this.tt));
+    // alert(JSON.stringify(this.tt));
 
     this.ds.save({email:localStorage.getItem('email'), tabledata:this.tt})
     .subscribe((response)=>{
@@ -59,7 +59,7 @@ export class TableComponent implements OnInit {
       {
         alert("your time table created succesfully");
         //new attached
-        this.router.navigate(['/dashboard/list-time-table'])
+        // this.router.navigate(['/dashboard/list-time-table'])
       }
       else{
         alert("something went wrong time table didn't create");
@@ -69,7 +69,7 @@ export class TableComponent implements OnInit {
 
   update()
   {
-    alert(JSON.stringify(this.tt));
+    // alert(JSON.stringify(this.tt));
 
     this.ds.updateTimeTable({email:localStorage.getItem('email'), tabledata:this.tt})
     .subscribe((response)=>{

@@ -29,6 +29,7 @@ import { EngBlogComponent } from './eng-blog/eng-blog.component';
 import { DocBlogComponent } from './doc-blog/doc-blog.component';
 import { CaBlogComponent } from './ca-blog/ca-blog.component';
 import { ListTimeTableComponent } from './list-time-table/list-time-table.component';
+import { DashfooterComponent } from './dashfooter/dashfooter.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { ListTimeTableComponent } from './list-time-table/list-time-table.compon
     EngBlogComponent,
     DocBlogComponent,
     CaBlogComponent,
-    ListTimeTableComponent
+    ListTimeTableComponent,
+    DashfooterComponent
   ],
   imports: [
     BrowserModule,

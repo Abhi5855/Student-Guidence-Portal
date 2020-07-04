@@ -1,8 +1,10 @@
 .body1{
     background: linear-gradient(rgb(0, 225, 255), rgb(255, 52, 147));
+    margin-top: 0px;
 }
 button:hover{
     box-sizing: 3px 3px blue;
+    transform: translate3D(0,-1px,0) scale(1.03);
 }
 .textclass{
     /* display: flex; */

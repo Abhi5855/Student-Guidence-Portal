@@ -15,11 +15,11 @@ export class ListTimeTableComponent implements OnInit {
 
   ngOnInit(): void {
           this.ds.getTimeTable().subscribe((response)=>{
-            alert(JSON.stringify(response));
+            // alert(JSON.stringify(response));
             if(response.status=="ok")
             {
                 this.tt= response.data;
-                alert(JSON.stringify(this.tt));
+                // alert(JSON.stringify(this.tt));
             }
           })
   }

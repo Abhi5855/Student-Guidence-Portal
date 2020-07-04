@@ -23,6 +23,7 @@ import { EngBlogComponent } from './eng-blog/eng-blog.component';
 import { DocBlogComponent } from './doc-blog/doc-blog.component';
 import { CaBlogComponent } from './ca-blog/ca-blog.component';
 import { ListTimeTableComponent } from './list-time-table/list-time-table.component';
+import { DashfooterComponent } from './dashfooter/dashfooter.component';
 
 
 const routes: Routes = [
@@ -73,6 +74,9 @@ const routes: Routes = [
       },
       {
         path:"listtimetable",component:ListTimeTableComponent
+      },
+      {
+        path:"dashfooter",component:DashfooterComponent
       }
     ]
   }
