@@ -35,3 +35,14 @@ p{
     width: 100%;
     color: darkred;
 }   */
+
+.container-fluid{
+    background-color: #625792;
+    border: 3px solid white;
+    padding: 30px;
+}
+.card{
+    background-color: aqua;
+    color: rgb(14, 124, 10);
+    text-shadow: 5px 2px 2px rgb(231, 219, 219);
+}

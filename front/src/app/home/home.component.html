@@ -1,7 +1,45 @@
-<div class="container my-4">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+        <div class="card" style="width: 21rem; height:25rem;">
+            <img src="../../assets/expl.jpg" class="img-fluid" style="height: 12rem;" alt="photos related with study">
+            <div class="card-body">
+              <h4 class="card-title">EXPLORE YOURSELF</h4>
+              <p class="card-text">Explore yourself by giving your academic survey to
+                know where you stand.</p>
+              <button #knowmore class="btn btn-success mx-2" routerLink="/sign-in">Go somewhere</button>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 21rem; height:25rem;">
+          <img src="../../assets/tip.jpg" class="img-fluid" style="height: 12rem;"  alt="photos related with study">
+          <div class="card-body">
+            <h4 class="card-title">GET STUDY TIPS</h4>
+            <p class="card-text">Follow the study tips while studying which makes you
+              free from stress.</p>
+            <button #knowmore class="btn btn-success mx-2" routerLink="/sign-in">Go somewhere</button>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" style="width: 21rem; height:25rem">
+        <img src="../../assets/timetable.jpg" class="img-fluid" style="height: 12rem;" alt="photos related with study">
+        <div class="card-body">
+          <h4 class="card-title">SCHEDULE TIME TABLE</h4>
+          <p class="card-text">Prepare your own time table on the daily basis and
+            follow it to manage your time</p>
+          <button #knowmore class="btn btn-success mx-2" routerLink="/sign-in">Go somewhere</button>
+        </div>
+      </div>
+</div>
+    </div>
+
+</div>
+<!-- <div class="container my-4">
     <div class="row">
         <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <img src="../../assets/expl.jpg" class="img-fluid" alt="photos related with study">
                 <div class="card-body">
                   <h4 class="card-title">EXPLORE YOURSELF</h4>
@@ -34,6 +72,5 @@
               </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- <a href="#" class="hvr-float-shadow">Float Shadow</a> -->
-<router-outlet></router-outlet>

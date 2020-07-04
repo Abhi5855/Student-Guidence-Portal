@@ -1,4 +1,6 @@
-<section class="container my-auto">
+<section class="container mt-5">
+    <h2 style="color: azure;">This is your time table created by you</h2>
+    <p style="color: beige;">If you want to make any changes in your time table then click on "update time table" button to update it according to you.</p>
     <table class="table table-bordered table-dark my-auto" >
         <thead>
             <tr>
@@ -135,7 +137,9 @@
             </tr>
         </tbody>
     </table>
-
-<button (click)="update()" >Update Time Table</button>    
+    <br>
+    <div class="but-div">
+        <button style="float: right;" class="btn btn-success"  (click)="update()" >Update Time Table</button>
+    </div>    
     
 </section>

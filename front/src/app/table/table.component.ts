@@ -47,10 +47,6 @@ export class TableComponent implements OnInit {
               }
             })
           }
-
-
-
-
   }
   save()
   {
@@ -62,6 +58,8 @@ export class TableComponent implements OnInit {
       if(response.status=="ok")
       {
         alert("your time table created succesfully");
+        //new attached
+        this.router.navigate(['/dashboard/list-time-table'])
       }
       else{
         alert("something went wrong time table didn't create");
@@ -71,8 +69,6 @@ export class TableComponent implements OnInit {
 
   update()
   {
-
-    
     alert(JSON.stringify(this.tt));
 
     this.ds.updateTimeTable({email:localStorage.getItem('email'), tabledata:this.tt})
