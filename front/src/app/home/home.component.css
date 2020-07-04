@@ -46,3 +46,7 @@ p{
     color: rgb(14, 124, 10);
     text-shadow: 5px 2px 2px rgb(231, 219, 219);
 }
+.card:hover{
+    box-shadow: 2px 5px 2px beige;
+    border: 5px solid aqua;
+}
